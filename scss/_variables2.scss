@@ -1,0 +1,98 @@
+$contentBackground: #21232e;
+$whiteText: #fff;
+$markerText: #ff4e33;
+$textColor : ("color" :#d1d1d1);
+$frecsa : 'Fresca',
+sans-serif;
+$source : 'Source Sans Pro',
+sans-serif;
+
+
+.header_text,
+.footer_text,
+.section_card_text,
+.section_banner_text,
+.footer-cr {
+    font-family: $frecsa;
+}
+
+.landing-logo {
+    p {
+        font-family: $frecsa;
+
+        span {
+            position: relative;
+            right: 45px;
+            top: 15px;
+            font-weight: normal;
+            font-size: 10px;
+        }
+    }
+}
+
+.landing-logo,
+.header_heading,
+.header_text,
+.section_card_heading,
+.section_text,
+.section_banner_heading {
+    color: $whiteText;
+}
+
+.footer_logo,
+.section_card_text,
+.section_banner_text,
+.footer_text,
+.footer-cr,
+.footer-wrap {
+    color: map-get($map: $textColor, $key: "color");
+}
+
+header {
+    background-image: url(../img/m-h-night.jpg);
+}
+
+.header_button,
+.section_banner_button {
+    background-color: #e3ac00;
+    color: $whiteText;
+}
+
+.header_heading::after {
+    background-color: $markerText;
+}
+
+.section_text::after {
+    background-color: $markerText;
+}
+
+.section_banner_heading::after {
+    background-color: $markerText;
+}
+
+.login {
+    color: $whiteText;
+}
+
+.section_link {
+    @extend .section_card_text;
+}
+
+.section_banner {
+    background: linear-gradient(to right, #e1a902, #922b54);
+}
+
+.section_card,
+.footer {
+    background-color: #3b3f50;
+
+    .landing-logo {
+        p {
+            left: 60px;
+        }
+    }
+}
+
+.header_text {
+    line-height: 150%;
+}

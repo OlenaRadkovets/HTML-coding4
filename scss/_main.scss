@@ -1,0 +1,237 @@
+// Write your styles here
+body {
+    background: $contentBackground;
+    margin: 0;
+    $source: 'Source Sans Pro',
+       sans-serif;
+    $hind: 'Hind',
+       sans-serif;
+ 
+    @mixin styleLink {
+       font-family: $hind;
+    }
+ 
+    @mixin newLink {
+       color: #c0c3ce;
+    }
+ 
+    @mixin styleButton {
+       font-weight: bold;
+       width: 145px;
+       height: 50px;
+       font-size: 15px;
+       border: none;
+ 
+    }
+ 
+    p {
+       font-family: $source;
+    }
+ 
+    header {
+       height: 700px;
+       background-repeat: no-repeat;
+       background-size: cover;
+       background-position: center;
+       border-radius: 0px 0px 300px 0px;
+    }
+ 
+    .header-wrap {
+       padding-left: 150px;
+    }
+ 
+    .landing-logo {
+       padding-top: 10px;
+       height: 50px;
+ 
+       p {
+          font-size: 25px;
+          font-weight: 600;
+          position: absolute;
+          left: 210px;
+          top: -15px;
+          width: 200px;
+       }
+ 
+    }
+ 
+    .header_heading::after {
+       content: "awesome";
+       display: inline-block;
+       position: absolute;
+       left: 150px;
+       top: 220px;
+       line-height: 50%;
+       padding-bottom: 20px;
+    }
+ 
+    .header_heading {
+       font-weight: bold;
+       font-size: 72px;
+       width: 500px;
+       line-height: 100%;
+    }
+ 
+    .header_text {
+       position: relative;
+       top: -40px;
+       width: 650px;
+       display: block;
+       text-align: initial;
+       align-content: space-around;
+       overflow-wrap: break-word;
+       word-spacing: 3px;
+       font-size: 15px;
+       white-space: pre-line;
+    }
+ 
+    .login {
+       @include styleLink;
+       position: absolute;
+       left: 450px;
+       font-size: 20px;
+ 
+    }
+ 
+    .header_button {
+       @include styleButton;
+    }
+ 
+    main {
+       margin: 0 auto;
+       width: 960px;
+    }
+ 
+    .section {
+       min-height: 400px;
+       display: flex;
+       align-items: center;
+       justify-content: space-between;
+       flex-flow: column wrap;
+       padding: 10px;
+    }
+ 
+    .section_text {
+       font-size: 40px;
+       font-weight: bold;
+       font-family: $hind;
+    }
+ 
+    .section_text::after {
+       content: "adventure";
+       display: inline-block;
+       position: absolute;
+       left: 775px;
+       line-height: 65%;
+       padding-top: 20px;
+ 
+    }
+ 
+    .section_card {
+       border-radius: 8px;
+       margin-bottom: 30px;
+       display: flex;
+       flex-direction: row;
+       align-items: center;
+       justify-content: center;
+       height: 230px;
+       width: 865px;
+       padding: 20px;
+    }
+ 
+    .section_card_img {
+       height: 240px;
+       width: 880px;
+       background-size: cover;
+       border-radius: 10px;
+    }
+ 
+    .section_card_right_container {
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+       text-align: center;
+    }
+ 
+    .section_card_heading {
+       font-size: 24px;
+       font-weight: bold;
+       position: relative;
+       top: 40px;
+       font-family: $hind;
+    }
+ 
+    .section_card_text {
+       height: 100px;
+       padding: 0px 80px 0px;
+       text-align: justify;
+       position: relative;
+       top: 10px;
+    }
+ 
+    .section_link {
+       @include newLink;
+       font-size: 15px;
+    }
+ 
+    .section_banner {
+       padding-left: 110px;
+       min-height: 100px;
+       position: relative;
+       top: 110px;
+       width: 850px;
+       height: 150px;
+       border-radius: 10px;
+    }
+ 
+    .section_banner_heading {
+       font-size: 30px;
+       font-weight: bold;
+    }
+ 
+    .section_banner_heading::after {
+       content: "start";
+       display: inline-block;
+       position: absolute;
+       top: 10px;
+       left: 230px;
+       line-height: 135%;
+       padding-top: 20px;
+    }
+ 
+    .section_banner_button {
+       @include styleButton;
+       position: relative;
+       left: 615px;
+       top: -90px;
+    }
+ 
+    footer {
+       height: 250px;
+ 
+       .footer_logo {
+          width: 200px;
+          position: relative;
+          left: 150px;
+          top: 135px;
+ 
+       }
+ 
+       .footer_text {
+          width: 320px;
+          position: relative;
+          left: 570px;
+          top: 65px;
+          word-spacing: -1px;
+          font-size: 15px;
+          line-height: 130%;
+       }
+ 
+       .footer-cr {
+          position: relative;
+          left: 80%;
+          top: 10px;
+       }
+    }
+ }

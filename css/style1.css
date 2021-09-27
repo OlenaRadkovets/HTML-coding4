@@ -1,0 +1,229 @@
+.header_text,
+.footer_text,
+.section_card_text,
+.section_link,
+.section_banner_text,
+.footer-cr {
+  font-family: "Hind", sans-serif; }
+
+.landing-logo {
+  color: #2c2f3c;
+  font-family: "Hind", sans-serif; }
+  .landing-logo p span {
+    position: relative;
+    right: 65px;
+    top: 15px;
+    font-weight: normal;
+    font-size: 10px; }
+
+.header_heading,
+.header_text,
+.section_banner_heading,
+.section_text {
+  color: #2c2f3c; }
+
+.footer_logo,
+.section_card_text,
+.section_link,
+.section_banner_text,
+.footer_text,
+.footer-cr,
+.footer-wrap {
+  color: #c0c3ce; }
+
+header {
+  background-image: url(../img/m-h-day.jpg); }
+
+.header_button,
+.section_banner_button {
+  background-color: #699900;
+  color: #fff; }
+
+.login {
+  color: #fff; }
+
+.header_heading::after {
+  background-color: #14A0C7; }
+
+.section_text::after {
+  background-color: #14A0C7; }
+
+.section_banner_heading::after {
+  background-color: #14A0C7; }
+
+.section_card_heading {
+  color: #fff; }
+
+.section_banner {
+  background: linear-gradient(to right, #689801, #2c5adb); }
+
+.section_card,
+.footer {
+  background-color: #21232E; }
+  .section_card .landing-logo p,
+  .footer .landing-logo p {
+    left: 60px;
+    font-family: "Hind", sans-serif; }
+
+body {
+  background: #fff;
+  margin: 0; }
+  body p {
+    font-family: "Source Sans Pro", sans-serif; }
+  body header {
+    height: 700px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 0px 0px 300px 0px; }
+  body .header-wrap {
+    padding-left: 150px; }
+  body .landing-logo {
+    padding-top: 10px;
+    height: 50px; }
+    body .landing-logo p {
+      font-size: 25px;
+      font-weight: 600;
+      position: absolute;
+      left: 210px;
+      top: -15px;
+      width: 200px; }
+  body .header_heading::after {
+    content: "awesome";
+    display: inline-block;
+    position: absolute;
+    left: 150px;
+    top: 220px;
+    line-height: 50%;
+    padding-bottom: 20px; }
+  body .header_heading {
+    font-weight: bold;
+    font-size: 72px;
+    width: 500px;
+    line-height: 100%; }
+  body .header_text {
+    position: relative;
+    top: -40px;
+    width: 650px;
+    display: block;
+    text-align: initial;
+    align-content: space-around;
+    overflow-wrap: break-word;
+    word-spacing: 3px;
+    font-size: 15px;
+    white-space: pre-line; }
+  body .login {
+    font-family: "Hind", sans-serif;
+    position: absolute;
+    left: 450px;
+    font-size: 20px; }
+  body .header_button {
+    font-weight: bold;
+    width: 145px;
+    height: 50px;
+    font-size: 15px;
+    border: none; }
+  body main {
+    margin: 0 auto;
+    width: 960px; }
+  body .section {
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-flow: column wrap;
+    padding: 10px; }
+  body .section_text {
+    font-size: 40px;
+    font-weight: bold;
+    font-family: "Hind", sans-serif; }
+  body .section_text::after {
+    content: "adventure";
+    display: inline-block;
+    position: absolute;
+    left: 775px;
+    line-height: 65%;
+    padding-top: 20px; }
+  body .section_card {
+    border-radius: 8px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 230px;
+    width: 865px;
+    padding: 20px; }
+  body .section_card_img {
+    height: 240px;
+    width: 880px;
+    background-size: cover;
+    border-radius: 10px; }
+  body .section_card_right_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center; }
+  body .section_card_heading {
+    font-size: 24px;
+    font-weight: bold;
+    position: relative;
+    top: 40px;
+    font-family: "Hind", sans-serif; }
+  body .section_card_text, body .section_link {
+    height: 100px;
+    padding: 0px 80px 0px;
+    text-align: justify;
+    position: relative;
+    top: 10px; }
+  body .section_link {
+    color: #c0c3ce;
+    font-size: 15px; }
+  body .section_banner {
+    padding-left: 110px;
+    min-height: 100px;
+    position: relative;
+    top: 110px;
+    width: 850px;
+    height: 150px;
+    border-radius: 10px; }
+  body .section_banner_heading {
+    font-size: 30px;
+    font-weight: bold; }
+  body .section_banner_heading::after {
+    content: "start";
+    display: inline-block;
+    position: absolute;
+    top: 10px;
+    left: 230px;
+    line-height: 135%;
+    padding-top: 20px; }
+  body .section_banner_button {
+    font-weight: bold;
+    width: 145px;
+    height: 50px;
+    font-size: 15px;
+    border: none;
+    position: relative;
+    left: 615px;
+    top: -90px; }
+  body footer {
+    height: 250px; }
+    body footer .footer_logo {
+      width: 200px;
+      position: relative;
+      left: 150px;
+      top: 135px; }
+    body footer .footer_text {
+      width: 320px;
+      position: relative;
+      left: 570px;
+      top: 65px;
+      word-spacing: -1px;
+      font-size: 15px;
+      line-height: 130%; }
+    body footer .footer-cr {
+      position: relative;
+      left: 80%;
+      top: 10px; }
